@@ -1,0 +1,52 @@
+Jan 07 12:26:54.421 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jan 07 12:26:54.423 HYPERVISOR: Started on IP = localhost, TCP port = 58099.
+Jan 07 12:26:54.824 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 07 12:26:54.825 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips 
+Jan 07 12:26:54.842 GENERAL: working_dir=C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips
+Jan 07 12:26:54.843 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips\36dd71e8-e12a-4f5a-a6e5-13c4f59b9cc6 
+Jan 07 12:26:54.844 GENERAL: working_dir=C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips\36dd71e8-e12a-4f5a-a6e5-13c4f59b9cc6
+Jan 07 12:26:54.844 HYPERVISOR: exec_cmd: vm create P3 1 c7200 
+Jan 07 12:26:54.847 VM: VM P3 created.
+Jan 07 12:26:54.848 HYPERVISOR: exec_cmd: vm set_con_tcp_port P3 5001 
+Jan 07 12:26:54.849 HYPERVISOR: exec_cmd: c7200 get_mac_addr P3 
+Jan 07 12:26:54.849 HYPERVISOR: exec_cmd: vm get_status P3 
+Jan 07 12:26:54.850 HYPERVISOR: exec_cmd: vm slot_add_binding P3 0 0 C7200-IO-FE 
+Jan 07 12:26:54.851 HYPERVISOR: exec_cmd: vm set_disk0 P3 0 
+Jan 07 12:26:54.852 HYPERVISOR: exec_cmd: vm set_exec_area P3 64 
+Jan 07 12:26:54.853 HYPERVISOR: exec_cmd: vm get_status P3 
+Jan 07 12:26:54.855 HYPERVISOR: exec_cmd: vm set_idle_pc P3 0x63185884 
+Jan 07 12:26:54.856 HYPERVISOR: exec_cmd: vm set_ios P3 C:/Users/pc/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 07 12:26:54.859 HYPERVISOR: exec_cmd: c7200 set_mac_addr P3 ca01.22b8.0000 
+Jan 07 12:26:54.860 HYPERVISOR: exec_cmd: vm set_nvram P3 512 
+Jan 07 12:26:54.861 HYPERVISOR: exec_cmd: vm set_ram P3 512 
+Jan 07 12:26:54.862 HYPERVISOR: exec_cmd: vm get_status P3 
+Jan 07 12:26:54.863 HYPERVISOR: exec_cmd: vm slot_add_binding P3 1 0 PA-2FE-TX 
+Jan 07 12:26:54.864 HYPERVISOR: exec_cmd: vm set_con_tcp_port P3 5001 
+Jan 07 12:27:05.603 HYPERVISOR: exec_cmd: nio create_udp udp-8467faa5-dd24-4cd8-9c60-ef8672c896e5 10070 127.0.0.1 10071 
+Jan 07 12:27:05.839 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P3 0 0 udp-8467faa5-dd24-4cd8-9c60-ef8672c896e5 
+Jan 07 12:27:05.840 HYPERVISOR: exec_cmd: vm get_status P3 
+Jan 07 12:27:05.923 HYPERVISOR: exec_cmd: nio create_udp udp-05e9b2b8-0975-4586-af60-7bf9ae0f1e16 10074 127.0.0.1 10075 
+Jan 07 12:27:05.925 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P3 1 0 udp-05e9b2b8-0975-4586-af60-7bf9ae0f1e16 
+Jan 07 12:27:05.926 HYPERVISOR: exec_cmd: vm get_status P3 
+Jan 07 12:27:06.622 HYPERVISOR: exec_cmd: nio create_udp udp-842199f0-c1e6-4aea-be17-d9403d90227a 10088 127.0.0.1 10089 
+Jan 07 12:27:06.626 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P3 1 1 udp-842199f0-c1e6-4aea-be17-d9403d90227a 
+Jan 07 12:27:06.626 HYPERVISOR: exec_cmd: vm get_status P3 
+Jan 07 12:27:23.309 HYPERVISOR: exec_cmd: vm set_ghost_status P3 2 
+Jan 07 12:27:23.311 HYPERVISOR: exec_cmd: vm set_ghost_file P3 C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips\c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 07 12:27:23.312 HYPERVISOR: exec_cmd: vm get_status P3 
+Jan 07 12:27:23.313 HYPERVISOR: exec_cmd: vm set_config P3 configs\i1_startup-config.cfg configs\i1_private-config.cfg 
+Jan 07 12:27:23.313 HYPERVISOR: exec_cmd: vm start P3 
+Jan 07 12:27:54.143 HYPERVISOR: exec_cmd: vm extract_config P3 
+Jan 07 12:28:24.130 HYPERVISOR: exec_cmd: vm extract_config P3 
+Jan 07 14:35:50.769 HYPERVISOR: exec_cmd: vm extract_config P3 
+Jan 07 14:35:55.377 HYPERVISOR: exec_cmd: vm get_status P3 
+Jan 07 14:35:55.378 HYPERVISOR: exec_cmd: vm stop P3 
+Jan 07 14:35:55.713 VM: VM P3 shutdown.
+Jan 07 14:35:55.719 HYPERVISOR: exec_cmd: vm extract_config P3 
+Jan 07 14:35:56.706 HYPERVISOR: exec_cmd: vm get_status P3 
+Jan 07 14:35:56.707 HYPERVISOR: exec_cmd: vm extract_config P3 
+Jan 07 14:35:56.711 HYPERVISOR: exec_cmd: vm delete P3 
+Jan 07 14:35:56.711 VM: VM P3 destroyed.
+Jan 07 14:35:56.715 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 07 14:35:57.145 HYPERVISOR: Stopped.
+Jan 07 14:35:57.145 GENERAL: reset done.

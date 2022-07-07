@@ -1,0 +1,53 @@
+Jan 07 12:26:57.798 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jan 07 12:26:57.799 HYPERVISOR: Started on IP = localhost, TCP port = 58147.
+Jan 07 12:26:58.329 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 07 12:26:58.330 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips 
+Jan 07 12:26:58.330 GENERAL: working_dir=C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips
+Jan 07 12:26:58.333 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips\82f0ed8d-4523-4db2-aa07-6215d1622d8f 
+Jan 07 12:26:58.333 GENERAL: working_dir=C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips\82f0ed8d-4523-4db2-aa07-6215d1622d8f
+Jan 07 12:26:58.334 HYPERVISOR: exec_cmd: vm create PE2 7 c7200 
+Jan 07 12:26:58.335 VM: VM PE2 created.
+Jan 07 12:26:58.337 HYPERVISOR: exec_cmd: vm set_con_tcp_port PE2 5011 
+Jan 07 12:26:58.339 HYPERVISOR: exec_cmd: c7200 get_mac_addr PE2 
+Jan 07 12:26:58.339 HYPERVISOR: exec_cmd: vm get_status PE2 
+Jan 07 12:26:58.340 HYPERVISOR: exec_cmd: vm slot_add_binding PE2 0 0 C7200-IO-FE 
+Jan 07 12:26:58.343 HYPERVISOR: exec_cmd: vm set_disk0 PE2 0 
+Jan 07 12:26:58.344 HYPERVISOR: exec_cmd: vm set_exec_area PE2 64 
+Jan 07 12:26:58.344 HYPERVISOR: exec_cmd: vm get_status PE2 
+Jan 07 12:26:58.344 HYPERVISOR: exec_cmd: vm set_idle_pc PE2 0x63185884 
+Jan 07 12:26:58.346 HYPERVISOR: exec_cmd: vm set_ios PE2 C:/Users/pc/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 07 12:26:58.346 HYPERVISOR: exec_cmd: c7200 set_mac_addr PE2 ca07.28ac.0000 
+Jan 07 12:26:58.346 HYPERVISOR: exec_cmd: vm set_nvram PE2 512 
+Jan 07 12:26:58.347 HYPERVISOR: exec_cmd: vm set_ram PE2 512 
+Jan 07 12:26:58.348 HYPERVISOR: exec_cmd: vm get_status PE2 
+Jan 07 12:26:58.348 HYPERVISOR: exec_cmd: vm slot_add_binding PE2 1 0 PA-2FE-TX 
+Jan 07 12:26:58.353 HYPERVISOR: exec_cmd: vm set_con_tcp_port PE2 5011 
+Jan 07 12:27:03.997 HYPERVISOR: exec_cmd: nio create_udp udp-8094c652-4542-4d25-8325-da9afde4a3c2 10040 127.0.0.1 10041 
+Jan 07 12:27:04.261 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE2 0 0 udp-8094c652-4542-4d25-8325-da9afde4a3c2 
+Jan 07 12:27:04.261 HYPERVISOR: exec_cmd: vm get_status PE2 
+Jan 07 12:27:04.641 HYPERVISOR: exec_cmd: nio create_udp udp-f8db64c1-00a4-4780-923b-065b89e2a57b 10046 127.0.0.1 10047 
+Jan 07 12:27:04.646 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE2 1 0 udp-f8db64c1-00a4-4780-923b-065b89e2a57b 
+Jan 07 12:27:04.646 HYPERVISOR: exec_cmd: vm get_status PE2 
+Jan 07 12:27:04.738 HYPERVISOR: exec_cmd: nio create_udp udp-e15575ef-f56f-4430-aef5-d2aa1f085e8e 10050 127.0.0.1 10051 
+Jan 07 12:27:04.741 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE2 1 1 udp-e15575ef-f56f-4430-aef5-d2aa1f085e8e 
+Jan 07 12:27:04.741 HYPERVISOR: exec_cmd: vm get_status PE2 
+Jan 07 12:27:24.981 HYPERVISOR: exec_cmd: vm set_ghost_status PE2 2 
+Jan 07 12:27:24.981 HYPERVISOR: exec_cmd: vm set_ghost_file PE2 C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips\c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 07 12:27:24.984 HYPERVISOR: exec_cmd: vm get_status PE2 
+Jan 07 12:27:24.985 HYPERVISOR: exec_cmd: vm set_config PE2 configs\i7_startup-config.cfg configs\i7_private-config.cfg 
+Jan 07 12:27:24.985 HYPERVISOR: exec_cmd: vm start PE2 
+Jan 07 12:28:10.067 HYPERVISOR: exec_cmd: vm extract_config PE2 
+Jan 07 12:28:40.068 HYPERVISOR: exec_cmd: vm extract_config PE2 
+Jan 07 14:34:20.728 HYPERVISOR: exec_cmd: vm extract_config PE2 
+Jan 07 14:34:50.756 HYPERVISOR: exec_cmd: vm extract_config PE2 
+Jan 07 14:35:56.024 HYPERVISOR: exec_cmd: vm get_status PE2 
+Jan 07 14:35:56.025 HYPERVISOR: exec_cmd: vm stop PE2 
+Jan 07 14:35:56.313 VM: VM PE2 shutdown.
+Jan 07 14:35:56.315 HYPERVISOR: exec_cmd: vm extract_config PE2 
+Jan 07 14:35:57.132 HYPERVISOR: exec_cmd: vm get_status PE2 
+Jan 07 14:35:57.133 HYPERVISOR: exec_cmd: vm extract_config PE2 
+Jan 07 14:35:57.137 HYPERVISOR: exec_cmd: vm delete PE2 
+Jan 07 14:35:57.137 VM: VM PE2 destroyed.
+Jan 07 14:35:57.141 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 07 14:35:57.192 HYPERVISOR: Stopped.
+Jan 07 14:35:57.192 GENERAL: reset done.

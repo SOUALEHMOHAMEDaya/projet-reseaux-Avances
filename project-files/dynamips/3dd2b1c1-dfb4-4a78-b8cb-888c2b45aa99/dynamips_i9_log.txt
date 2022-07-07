@@ -1,0 +1,49 @@
+Jan 07 12:26:56.647 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jan 07 12:26:56.648 HYPERVISOR: Started on IP = localhost, TCP port = 58130.
+Jan 07 12:26:57.141 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 07 12:26:57.142 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips 
+Jan 07 12:26:57.142 GENERAL: working_dir=C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips
+Jan 07 12:26:57.143 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips\c96d4f58-7706-404a-bb37-15842702181d 
+Jan 07 12:26:57.143 GENERAL: working_dir=C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips\c96d4f58-7706-404a-bb37-15842702181d
+Jan 07 12:26:57.144 HYPERVISOR: exec_cmd: vm create PE3 5 c7200 
+Jan 07 12:26:57.147 VM: VM PE3 created.
+Jan 07 12:26:57.148 HYPERVISOR: exec_cmd: vm set_con_tcp_port PE3 5008 
+Jan 07 12:26:57.149 HYPERVISOR: exec_cmd: c7200 get_mac_addr PE3 
+Jan 07 12:26:57.150 HYPERVISOR: exec_cmd: vm get_status PE3 
+Jan 07 12:26:57.150 HYPERVISOR: exec_cmd: vm slot_add_binding PE3 0 0 C7200-IO-FE 
+Jan 07 12:26:57.151 HYPERVISOR: exec_cmd: vm set_disk0 PE3 0 
+Jan 07 12:26:57.153 HYPERVISOR: exec_cmd: vm set_exec_area PE3 64 
+Jan 07 12:26:57.154 HYPERVISOR: exec_cmd: vm get_status PE3 
+Jan 07 12:26:57.155 HYPERVISOR: exec_cmd: vm set_idle_pc PE3 0x63185884 
+Jan 07 12:26:57.157 HYPERVISOR: exec_cmd: vm set_ios PE3 C:/Users/pc/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 07 12:26:57.159 HYPERVISOR: exec_cmd: c7200 set_mac_addr PE3 ca05.0d50.0000 
+Jan 07 12:26:57.160 HYPERVISOR: exec_cmd: vm set_nvram PE3 512 
+Jan 07 12:26:57.160 HYPERVISOR: exec_cmd: vm set_ram PE3 512 
+Jan 07 12:26:57.161 HYPERVISOR: exec_cmd: vm get_status PE3 
+Jan 07 12:26:57.162 HYPERVISOR: exec_cmd: vm slot_add_binding PE3 1 0 PA-2FE-TX 
+Jan 07 12:26:57.163 HYPERVISOR: exec_cmd: vm set_con_tcp_port PE3 5008 
+Jan 07 12:27:06.276 HYPERVISOR: exec_cmd: nio create_udp udp-e90fad10-e902-4762-8d2c-337fc1f53e9a 10082 127.0.0.1 10083 
+Jan 07 12:27:06.518 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE3 0 0 udp-e90fad10-e902-4762-8d2c-337fc1f53e9a 
+Jan 07 12:27:06.519 HYPERVISOR: exec_cmd: vm get_status PE3 
+Jan 07 12:27:06.612 HYPERVISOR: exec_cmd: nio create_udp udp-2beba1b4-ccd7-4773-a0a4-2676ad15eec7 10086 127.0.0.1 10087 
+Jan 07 12:27:06.613 HYPERVISOR: exec_cmd: vm slot_add_nio_binding PE3 1 0 udp-2beba1b4-ccd7-4773-a0a4-2676ad15eec7 
+Jan 07 12:27:06.614 HYPERVISOR: exec_cmd: vm get_status PE3 
+Jan 07 12:27:24.095 HYPERVISOR: exec_cmd: vm set_ghost_status PE3 2 
+Jan 07 12:27:24.095 HYPERVISOR: exec_cmd: vm set_ghost_file PE3 C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips\c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 07 12:27:24.106 HYPERVISOR: exec_cmd: vm get_status PE3 
+Jan 07 12:27:24.108 HYPERVISOR: exec_cmd: vm set_config PE3 configs\i5_startup-config.cfg configs\i5_private-config.cfg 
+Jan 07 12:27:24.108 HYPERVISOR: exec_cmd: vm start PE3 
+Jan 07 12:27:54.968 HYPERVISOR: exec_cmd: vm extract_config PE3 
+Jan 07 12:28:24.972 HYPERVISOR: exec_cmd: vm extract_config PE3 
+Jan 07 14:35:20.776 HYPERVISOR: exec_cmd: vm extract_config PE3 
+Jan 07 14:35:55.742 HYPERVISOR: exec_cmd: vm get_status PE3 
+Jan 07 14:35:55.744 HYPERVISOR: exec_cmd: vm stop PE3 
+Jan 07 14:35:56.001 VM: VM PE3 shutdown.
+Jan 07 14:35:56.002 HYPERVISOR: exec_cmd: vm extract_config PE3 
+Jan 07 14:35:56.689 HYPERVISOR: exec_cmd: vm get_status PE3 
+Jan 07 14:35:56.690 HYPERVISOR: exec_cmd: vm extract_config PE3 
+Jan 07 14:35:56.696 HYPERVISOR: exec_cmd: vm delete PE3 
+Jan 07 14:35:56.696 VM: VM PE3 destroyed.
+Jan 07 14:35:56.701 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 07 14:35:57.161 HYPERVISOR: Stopped.
+Jan 07 14:35:57.161 GENERAL: reset done.

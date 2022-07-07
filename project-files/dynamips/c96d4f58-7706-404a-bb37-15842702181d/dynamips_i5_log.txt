@@ -1,0 +1,67 @@
+Jan 07 12:26:55.517 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jan 07 12:26:55.518 HYPERVISOR: Started on IP = localhost, TCP port = 58116.
+Jan 07 12:26:56.009 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 07 12:26:56.009 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips 
+Jan 07 12:26:56.010 GENERAL: working_dir=C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips
+Jan 07 12:26:56.010 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips\0dc5b188-2967-4ae1-b83d-c07b09b23c5c 
+Jan 07 12:26:56.011 GENERAL: working_dir=C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips\0dc5b188-2967-4ae1-b83d-c07b09b23c5c
+Jan 07 12:26:56.011 HYPERVISOR: exec_cmd: vm create P4 3 c7200 
+Jan 07 12:26:56.013 VM: VM P4 created.
+Jan 07 12:26:56.014 HYPERVISOR: exec_cmd: vm set_con_tcp_port P4 5004 
+Jan 07 12:26:56.014 HYPERVISOR: exec_cmd: c7200 get_mac_addr P4 
+Jan 07 12:26:56.015 HYPERVISOR: exec_cmd: vm get_status P4 
+Jan 07 12:26:56.015 HYPERVISOR: exec_cmd: vm slot_add_binding P4 0 0 C7200-IO-FE 
+Jan 07 12:26:56.016 HYPERVISOR: exec_cmd: vm set_disk0 P4 0 
+Jan 07 12:26:56.016 HYPERVISOR: exec_cmd: vm set_exec_area P4 64 
+Jan 07 12:26:56.018 HYPERVISOR: exec_cmd: vm get_status P4 
+Jan 07 12:26:56.018 HYPERVISOR: exec_cmd: vm set_idle_pc P4 0x63185884 
+Jan 07 12:26:56.019 HYPERVISOR: exec_cmd: vm set_ios P4 C:/Users/pc/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 07 12:26:56.020 HYPERVISOR: exec_cmd: c7200 set_mac_addr P4 ca03.2750.0000 
+Jan 07 12:26:56.020 HYPERVISOR: exec_cmd: vm set_nvram P4 512 
+Jan 07 12:26:56.021 HYPERVISOR: exec_cmd: vm set_ram P4 512 
+Jan 07 12:26:56.022 HYPERVISOR: exec_cmd: vm get_status P4 
+Jan 07 12:26:56.022 HYPERVISOR: exec_cmd: vm slot_add_binding P4 1 0 PA-2FE-TX 
+Jan 07 12:26:56.024 HYPERVISOR: exec_cmd: vm set_con_tcp_port P4 5004 
+Jan 07 12:27:05.217 HYPERVISOR: exec_cmd: nio create_udp udp-fbac00cd-91b0-4ba2-b0ed-cba309b8caa6 10064 127.0.0.1 10065 
+Jan 07 12:27:05.476 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P4 0 0 udp-fbac00cd-91b0-4ba2-b0ed-cba309b8caa6 
+Jan 07 12:27:05.477 HYPERVISOR: exec_cmd: vm get_status P4 
+Jan 07 12:27:05.934 HYPERVISOR: exec_cmd: nio create_udp udp-8fa938ba-e045-4903-8099-ee506a351e08 10076 127.0.0.1 10077 
+Jan 07 12:27:05.936 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P4 1 0 udp-8fa938ba-e045-4903-8099-ee506a351e08 
+Jan 07 12:27:05.937 HYPERVISOR: exec_cmd: vm get_status P4 
+Jan 07 12:27:07.694 HYPERVISOR: exec_cmd: nio create_udp udp-70cce161-f527-49a6-8689-f8d3d40fbb4c 10106 127.0.0.1 10107 
+Jan 07 12:27:07.697 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P4 1 1 udp-70cce161-f527-49a6-8689-f8d3d40fbb4c 
+Jan 07 12:27:07.698 HYPERVISOR: exec_cmd: vm get_status P4 
+Jan 07 12:27:22.504 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Jan 07 12:27:22.507 VM: VM Ghost created.
+Jan 07 12:27:22.508 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/pc/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Jan 07 12:27:22.508 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 07 12:27:22.508 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips\c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 07 12:27:22.511 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Jan 07 12:27:22.512 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 07 12:27:22.512 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Jan 07 12:27:22.513 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 07 12:27:23.064 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 07 12:27:23.080 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jan 07 12:27:23.278 VM: VM Ghost shutdown.
+Jan 07 12:27:23.278 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jan 07 12:27:23.284 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 07 12:27:23.284 VM: VM Ghost destroyed.
+Jan 07 12:27:23.303 HYPERVISOR: exec_cmd: vm set_ghost_status P4 2 
+Jan 07 12:27:23.304 HYPERVISOR: exec_cmd: vm set_ghost_file P4 C:\Users\pc\Desktop\Projet RESEAU\Projet\project-files\dynamips\c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Jan 07 12:27:23.304 HYPERVISOR: exec_cmd: vm get_status P4 
+Jan 07 12:27:23.306 HYPERVISOR: exec_cmd: vm set_config P4 configs\i3_startup-config.cfg configs\i3_private-config.cfg 
+Jan 07 12:27:23.307 HYPERVISOR: exec_cmd: vm start P4 
+Jan 07 12:27:54.451 HYPERVISOR: exec_cmd: vm extract_config P4 
+Jan 07 12:28:24.448 HYPERVISOR: exec_cmd: vm extract_config P4 
+Jan 07 14:35:50.768 HYPERVISOR: exec_cmd: vm extract_config P4 
+Jan 07 14:35:55.376 HYPERVISOR: exec_cmd: vm get_status P4 
+Jan 07 14:35:55.378 HYPERVISOR: exec_cmd: vm stop P4 
+Jan 07 14:35:55.713 VM: VM P4 shutdown.
+Jan 07 14:35:55.718 HYPERVISOR: exec_cmd: vm extract_config P4 
+Jan 07 14:35:57.147 HYPERVISOR: exec_cmd: vm get_status P4 
+Jan 07 14:35:57.148 HYPERVISOR: exec_cmd: vm extract_config P4 
+Jan 07 14:35:57.152 HYPERVISOR: exec_cmd: vm delete P4 
+Jan 07 14:35:57.152 VM: VM P4 destroyed.
+Jan 07 14:35:57.154 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 07 14:35:57.161 HYPERVISOR: Stopped.
+Jan 07 14:35:57.161 GENERAL: reset done.
